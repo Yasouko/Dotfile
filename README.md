@@ -10,7 +10,7 @@ sudo pacman -Suy && sudo pacman -S git
 
 ---
 
-## [You can install this.](https://github.com/EndeavourOS-Community-Editions/bspwm)
+## [You need to install this.](https://github.com/EndeavourOS-Community-Editions/bspwm)
 
 ![EndeavourOS](https://raw.githubusercontent.com/EndeavourOS-Community-Editions/bspwm/main/bspwm.png)
 
