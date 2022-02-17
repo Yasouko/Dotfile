@@ -1,4 +1,4 @@
-# EndeavourOS
+# I am using EndeavourOS
 
 ![ui](./ui.png)
 
