@@ -16,6 +16,11 @@ yay -S git
 yay -S picom-ibhagwan-git
 
 ```
+
+```bash
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
 ---
 
 ## [First Install Zsh and Ohmyzsh](https://ohmyz.sh/#install) 
@@ -38,19 +43,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ### [HTTPS](https://git-scm.com/)
 
 ```bash
-git clone https://github.com/Yasouko/dotfiles.git
+git clone https://github.com/Yasouko/dotfile.git
 ```
 
 ### [SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
 ```bash
-git clone git@github.com:Yasouko/dotfiles.git
+git clone git@github.com:Yasouko/dotfile.git
 ```
-
-## [Run setup.sh file](https://docs.fileformat.com/programming/sh/)
-
-```bash
-./setup.sh
-```
-
-![Screen](./Screen.png)
