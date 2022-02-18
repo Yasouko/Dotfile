@@ -1,6 +1,6 @@
 # I am using EndeavourOS
 
-![ui](./ui.png)
+<img src='./ui.png'>
 
 ## Installation
 
