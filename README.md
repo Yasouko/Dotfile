@@ -1,4 +1,4 @@
-# I am using EndeavourOS
+# EndeavourOS
 
 <img src='./ui.png'>
 
