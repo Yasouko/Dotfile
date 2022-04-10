@@ -44,6 +44,8 @@ dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 sleep 3 && picom -b --config /home/yasouko/.config/picom.conf &
 # Intellij(Java Application)
 wmname LG3D
+# Enable num lock
+numlockx
 # Network Applet
 nm-applet --indicator &
 
