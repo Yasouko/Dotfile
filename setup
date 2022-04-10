@@ -1,6 +1,6 @@
-# /bin/bash
+#!/bin/bash
 
-
+echo "Copying files ..."
 
 ln -s ~/.dotfiles/bspwm ~/.config/bspwm
 ln -s ~/.dotfiles/picom ~/.config/picom
@@ -10,6 +10,28 @@ ln -s ~/.dotfiles/polybar ~/.config/polybar
 ln -s ~/.dotfiles/dunst ~/.config/dunst
 ln -s ~/.dotfiles/.wall ~/.wall
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
+
 ln -s ~/.dotfiles/.vimrc ~/.vimrc
 mkdir ~/.vim
 ln -s ~/.dotfiles/hotkeys ~/.vim/hotkeys
+chmod 0444 ~/.vim/hotkeys
+
+echo "Done. :)"
+
+echo "vim Plug"
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+echo "zsh"
+yes | sudo pacman -S zsh vim
+echo "ohmyzsh"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo "ohmyzsh Plug"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+echo "Num lock"
+yes | sudo pacman -S numlockx
+
+echo "wmname"
+yes | sudo pacman -S wmname
